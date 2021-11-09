@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title>Logan's Portfolio</title>
+      <style>
+        body {
+            background: rgb(75,0,130);
+            color: rgb(0,0,0);
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+            max-width: 800px;
+            margin: auto;
+        }
+    
+        /* navigation menu */
+        nav {
+            background: rgb(236, 61, 236);
+            margin: 0 auto;
+            margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    
+        /* main container area beneath menu */
+        main {
+                                            background: rgb(236, 61, 236);
+                                            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 20px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px silver ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <!--All content goes here-->
+      <div id="all-contents">
+         
+          <nav>
+            <h1>Logan's Portfolio<h1></h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                    <a href="index.html"> Home </a> 
+                </li>
+                <li class="nav-li>
+                    <a href="portfolio.html"> Portfolio </a> 
+
+                </li>
+            </ul> 
+
+          </nav>
+
+          <main>
+              <!--Sidebar section-->
+              <div class="sidebar">
+                  <img class = "sidebar-img src = "images/IMG_3908.JPG">
+
+
+
+              </div>
+
+              <!--Content section-->
+              <div class="content">
+                <h2>Logan Shephard</h2>
+                <p>"Student at Northshore HighSchool"</p>
+                <!-- Interests section -->
+                <div id="interests"> 
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>I Enjoy Coding</li>
+                        <li>I Like To Code Games and Mini Games</li>
+                        <li>My Favorite Game Is Diablo 3</li>
+                    </ul>
+                </div>
+              </div>
+
+          </main>
+      </div>
+    </body>
+</html>
