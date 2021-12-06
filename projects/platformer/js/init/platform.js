@@ -50,6 +50,8 @@
         //top bar
         createPlatform(200, 100, 1.5);
         createPlatform(200, 300)
+        createPlatform(575, 240, .1, 2)
+        createPlatform(500, 125, .1, 2)
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
