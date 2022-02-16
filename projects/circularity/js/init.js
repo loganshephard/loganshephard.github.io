@@ -38,6 +38,9 @@ var init = function (window) {
         for(var i = 0; i <= 600 ; i++){
             drawCircle();
         }
+
+        //This code above draws 600 circles without having to write the code 600 times
+
         /*
         drawCircle();
         drawCircle();
@@ -65,6 +68,8 @@ var init = function (window) {
             physikz.updatePosition(circles[3]);
             physikz.updatePosition(circles[4]);
             */
+
+            //This code updates the circles position as it moves across the screen
         
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
 
@@ -76,11 +81,14 @@ var init = function (window) {
             game.checkCirclePosition(circles[4]);
            */
 
+            // 
+
             // TODO 9 : Iterate over the array
            for(var j = 0; j <= circles.length - 1; j++){
             game.checkCirclePosition(circles[j]);
             physikz.updatePosition(circles[j]);
            }
+            // This code repeats game.checkCirclePosition(circles[j]), physikz.updatePosition(circles[j]) for all 600 circles to keep track of their position and physiks
             
         }
     
@@ -104,6 +112,10 @@ var init = function (window) {
             if ( circle.y > canvas.height ) {
                 circle.y = 0;
             }
+
+            //
+
+            
             // TODO 7 : YOUR CODE STARTS HERE //////////////////////
             
 
