@@ -37,7 +37,7 @@ var init = function (window) {
 
         for(var i = 0; i <= 600 ; i++){
             drawCircle();
-        }
+        {
 
         //This code above draws 600 circles without having to write the code 600 times
 
@@ -60,6 +60,7 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
+
 
             /*
             physikz.updatePosition(circles[0]);
@@ -113,7 +114,7 @@ var init = function (window) {
                 circle.y = 0;
             }
 
-            //
+            // These if statements track the positions of the circle and if it hits border of the window it reset its position to 0
 
             
             // TODO 7 : YOUR CODE STARTS HERE //////////////////////
