@@ -57,13 +57,13 @@ var background = function (window) {
 
             }
             // TODO 5: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
-            for(var i=0;i<5;++i) {
-                var buildingHeight = 300;
-                var building = draw.rect(75,buildingHeight,'LightGray','Black',1);
-                building.x = 200*i;
-                building.y = groundY-buildingHeight;
-                background.addChild(building);
-                buildings.push(building);
+            for(var i = 0; i < 5; i++) {
+                var buildingHeight = 300; // creates a variable called building height that holds the height of the building in pixels
+                var building = draw.rect(75,buildingHeight,'LightGray','Black',1); // creates a var called building that holds the data for the drawn building
+                building.x = 200*i; // positions the x of each building 200 pixels from the next building on each loop
+                building.y = groundY-buildingHeight; // sets the y of the building off the groundY - buildingHeight
+                background.addChild(building); // adds building to background so it can be seen
+                buildings.push(building); // pushes each individual building to the buildings array
             }
             
             // TODO 4: Part 1 - Add a tree
@@ -93,7 +93,14 @@ var background = function (window) {
             }
             
             // TODO 5: Part 2 - Parallax
-            
+
+            //loops the building and moves them to the left by 0.5 pixels
+            for (var i = 0; i < buildings.length; i++){
+                buildings[i].x = buildings[i].x - 0.5; //moves the building's x position by .5 pixels
+                if(buildings[i].x < 0) { //checks to see if the building's x pos is off the left side and if it is resets the 
+                    buildings[i].x = canvasWidth;
+                }
+            }
 
         } // end of update function - DO NOT DELETE
         
