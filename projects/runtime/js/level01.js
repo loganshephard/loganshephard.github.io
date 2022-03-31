@@ -24,6 +24,7 @@ var level01 = function (window) {
                 { "type": "sawblade", "x": 2250, "y": groundY - 20},
                 { "type": "sawblade", "x": 3000, "y": groundY - 20},
                 { "type": "sawblade", "x": 3500, "y": groundY - 20},
+                { "type": "sawblade", "x": 4500, "y": groundY - 20},
 
 
                 { "type": "enemy", "x": 800, "y": groundY - 45},
@@ -46,7 +47,7 @@ var level01 = function (window) {
 
         function createSawBlade(x, y){
             var hitZoneSize = 30; //creates the size of the hitzone to 25 pixels
-            var damageFromObstacle = 10; //sets the damage of the obstacle
+            var damageFromObstacle = 30 ; //sets the damage of the obstacle
             var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle); //creates the hitzone 
             sawBladeHitZone.x = x; //the x position of the hitzone
             sawBladeHitZone.y = y; //the y position of the hitzone
